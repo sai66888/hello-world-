@@ -1,118 +1,391 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import { url } from "inspector";
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+const Home = () => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+    <div
+      className="backgroundImage"
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        zIndex: "-100" // Added to evenly space the columns
+      }}
     >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      <div
+        style={{
+          flex: 1,
+          alignSelf: "center",
+          backgroundColor: "rgba(255,255,255,0.1)",
+          padding: "10px",
+          height: "4000px"
+        }}
+      >
+        Column 1
+        <div
+          style={{
+            textAlign: "center",
+            height: "100px",
+            borderRadius: "20px",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Playfair Display",
+            marginTop: "5cm"
+          }}
+        >
+          $1 BUY = <br /> 20 SECONDS
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            height: "auto",
+            borderRadius: "10%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Apple Color Emoji",
+            marginTop: "8cm"
+          }}
+        >
+          The Story
+          <div
+            style={{
+              textAlign: "center",
+              display: "flow",
+              fontSize: "25px",
+              color: "white",
+              fontFamily: "Playfair Display",
+              marginTop: "cm",
+              padding: "40px"
+            }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            Eternal Flame of the Internet is a web3-crypto community experiment,
+            lit in the spirit of the Paris Olympics. It is fueled by Eternal
+            Flame Token - every Eternal Flame buyer and holder becomes a mighty
+            Flame Guardian. Let's test our endurance here, on the Internet. How
+            long can we keep the Flame burning?
+          </div>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            height: "250px",
+            borderRadius: "10%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Apple Color Emoji",
+            marginTop: "5cm"
+          }}
+        >
+          The Guardians
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div
+        style={{
+          flex: 1,
+          textAlign: "center",
+          height: "0px",
+          backgroundColor: "rgba(255,255,255,0.1)",
+          color: "white",
+          padding: "0px",
+          top: 130,
+          position: "sticky",
+          alignSelf: "flex-start",
+          fontSize: "45px",
+          fontSmooth: "4",
+          fontStretch: "",
+          fontFamily: "Apple Color Emoji",
+          margin: "2cm"
+        }}
+      >
+        ETERNAL <br />
+        FLAME OF THE INTERNET
+        <div
+          style={{
+            flex: 1,
+            height: "0px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "#0B2538"
+          }}
+        >
+          <img
+            src={"/2-Logo.png"}
+            alt="icon"
+            style={{ width: "120px", height: "120px", marginTop: "-13cm" }}
+          />
+        </div>
+        <div
+          style={{
+            flex: 1,
+            position: "relative",
+            textAlign: "center",
+            zIndex: "0",
+            height: "100px",
+            borderRadius: "15%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            fontWeight: "500",
+            fontStyle: "oblique",
+            fontFamily: "Apple Color Emoji,Times",
+            marginTop: "1cm"
+          }}
+        >
+          IGINITION IN:
+          <br />
+          00 00 00 00
+        </div>
+        <div
+          style={{
+            flex: 1,
+            height: "0px",
+            zIndex: "-50",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "rgba(255,255,255,0.3)",
+            marginTop: "3.5cm"
+          }}
+        >
+          <img
+            src={"/1.png"}
+            alt="icon"
+            style={{ width: "100px", height: "300px", marginTop: "-6cm" }}
+          />{" "}
+          {}{" "}
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div
+        style={{
+          flex: 1,
+          textAlign: "center",
+          backgroundColor: "rgba(255,255,255,0.1)",
+          padding: "10px",
+          height: "4000px"
+        }}
+      >
+        Column 3
+        <div
+          style={{
+            textAlign: "center",
+            height: "100px",
+            borderRadius: "10%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Playfair Display",
+            marginTop: "5cm"
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          KEEP THE FLAME <br />
+          ALIVE
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            height: "680px",
+            borderRadius: "10%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Apple Color Emoji",
+            marginTop: "15cm"
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+          How It Works?
+          <div
+            style={{
+              textAlign: "center",
+              display: "flow",
+              fontSize: "25px",
+              color: "white",
+              fontFamily: "Playfair Display",
+              marginTop: "cm"
+            }}
+          >
+            <br />
+            Each buy order of at least
+            <br /> $1 of Eternal Flame token
+            <br />
+            adds 20 seconds of burn
+            <br /> time for the Flame and
+            <br />
+            makes you a Flame <br /> Guardiam. The Flame will
+            <br /> burn as long as there are <br /> enough Guardians to
+            <br /> support the Flame. Selling <br />
+            the token does not reduce
+            <br />
+            the burning time - you
+            <br />
+            will not be punished by <br />
+            leaving your post, but
+            <br />
+            honorable are those who
+            <br />
+            keep the watch.
+          </div>
+        </div>
+        <div
+          style={{
+            flex: 1,
+            textAlign: "center",
+            height: "650px",
+            borderRadius: "10%",
+            display: "flow",
+            backgroundColor: "#0B2538",
+            fontSize: "2rem",
+            color: "gold",
+            fontFamily: "Apple Color Emoji",
+            marginTop: "25cm"
+          }}
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          $FLAME Tokenomics
+          <div
+            style={{
+              textAlign: "center",
+              display: "flow",
+              fontSize: "25px",
+              color: "white",
+              fontFamily: "Playfair Display",
+              marginTop: "cm"
+            }}
+          >
+            Tax:1%Sell&1%
+            <br />
+            Buy
+            <br />
+            Total Supply
+            <br />
+            100 000 000
+            <br />
+            FLAME
+            <br />
+          </div>
+          <div
+            style={{
+              textAlign: "center",
+              display: "flow",
+              fontSize: "15px",
+              color: "white",
+              fontFamily: "Playfair Display",
+              marginTop: "cm"
+            }}
+          >
+            ICO+Liquidity 86%
+          </div>
+          <div>
+            <div
+              style={{
+                alignSelf: "center",
+                padding: "0px",
+                backgroundColor: "gold",
+                height: "10px",
+                width: "200px",
+                marginTop: "3px",
+                marginLeft: "40px",
+                borderRadius: "1px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+            <div
+              style={{
+                alignSelf: "center",
+                alignContent: "center",
+                padding: "0px",
+                backgroundColor: "grey",
+                borderRadius: "1px",
+                height: "15px",
+                width: "120px",
+                marginTop: "-12px",
+                marginLeft: "40px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+            <div>Team 10%</div>
+          </div>
+          <div>
+            <div
+              style={{
+                alignSelf: "center",
+                padding: "0px",
+                backgroundColor: "gold",
+                height: "10px",
+                width: "200px",
+                marginTop: "3px",
+                marginLeft: "40px",
+                borderRadius: "1px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+            <div
+              style={{
+                alignSelf: "center",
+                alignContent: "center",
+                padding: "0px",
+                backgroundColor: "grey",
+                borderRadius: "1px",
+                height: "15px",
+                width: "120px",
+                marginTop: "-12px",
+                marginLeft: "40px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+          </div>
+          <div>Marketing 4%</div>
+          <div>
+            <div
+              style={{
+                alignSelf: "center",
+                padding: "0px",
+                backgroundColor: "gold",
+                height: "10px",
+                width: "200px",
+                marginTop: "3px",
+                marginLeft: "40px",
+                borderRadius: "1px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+            <div
+              style={{
+                alignSelf: "center",
+                alignContent: "center",
+                padding: "0px",
+                backgroundColor: "grey",
+                borderRadius: "1px",
+                height: "15px",
+                width: "120px",
+                marginTop: "-12px",
+                marginLeft: "40px",
+                position: "relative",
+                alignItems: "center"
+              }}
+            ></div>
+          </div>
+        </div>
       </div>
-    </main>
+    </div>
   );
-}
+};
+
+export default Home;
